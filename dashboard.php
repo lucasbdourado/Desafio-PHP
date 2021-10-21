@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="cadastro.php">Adicionar</a>
     <table style="width:100%">
     <tr>
         <th>Código</th>
@@ -33,6 +34,8 @@
         <td><?php echo $display['valor'] ?></td>
         <td><?php echo $display['PN'] ?></td>
         <td><?php echo $display['quantidade'] ?></td>
+        <td>Editar</td>
+        <td>Excluir</td>
     </tr>
 <?php
         }

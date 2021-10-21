@@ -30,5 +30,4 @@
             mysqli_query($newconnect,$table);
         }
     }
-    echo "Conexão bem sucedida";
 ?>
