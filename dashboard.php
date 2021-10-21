@@ -35,11 +35,18 @@
         <td><?php echo $display['PN'] ?></td>
         <td><?php echo $display['quantidade'] ?></td>
         <td>Editar</td>
-        <td>Excluir</td>
+        <td><button onclick="excluir('<?php echo $display['cod']?>');">Excluir</button></td>
     </tr>
 <?php
         }
 ?>
     </table>
 </body>
+<script>
+		function excluir(cod){
+			if(window.confirm("Confirma a exclusão do produto de código "+cod+"?")){
+				window.location = 'excluir.php?cod=' + cod;
+			}
+		}
+</script>
 </html>

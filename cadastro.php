@@ -11,19 +11,19 @@ include 'connection.php';
     <title>Document</title>
 </head>
 <body>
-    <form action="crud.php" method="post">
+    <form action="create.php" method="post">
         <label for="cod">Código do Produto:</label>
-        <input type="number" id="cod" name="cod">
+        <input type="number" id="cod" name="cod" required>
         <label for="descricao">Descrição do Produto:</label>
-        <input type="text" id="descricao" name="descricao">
+        <input type="text" id="descricao" name="descricao" required>
         <label for="valor">Valor do Produto:</label>
-        <input type="text" id="valor" name="valor">
+        <input type="text" id="valor" name="valor" required>
         <label for="codpn">Código (PN):</label>
-        <input type="text" id="codpn" name="codpn">
+        <input type="text" id="codpn" name="codpn" required>
         <label for="quantidade">Quantidade em estoque:</label>
-        <input type="text" id="quantidade" name="quantidade">
+        <input type="text" id="quantidade" name="quantidade" required>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Adicionar">
     </form>
 </body>
 </html>
