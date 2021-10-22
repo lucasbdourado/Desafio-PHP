@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="cadastro.php">Adicionar</a>
+    <a href="cadastro.php">Cadastrar Produtos</a>
+    <a href="estoque.php">Adicionar/Remover do Estoque</a>
     <table style="width:100%">
     <tr>
         <th>Código</th>
@@ -34,8 +35,8 @@
         <td><?php echo $display['valor'] ?></td>
         <td><?php echo $display['PN'] ?></td>
         <td><?php echo $display['quantidade'] ?></td>
-        <td>Editar</td>
-        <td><button onclick="excluir('<?php echo $display['cod']?>');">Excluir</button></td>
+        <td><a href="editar.php?cod=<?php echo $display['cod']; ?>">Editar</a></td>
+        <td><button onclick="excluir('<?php echo $display['cod'];?>');">Excluir</button></td>
     </tr>
 <?php
         }
