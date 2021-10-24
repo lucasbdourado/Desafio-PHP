@@ -204,5 +204,21 @@ small{
   font-weight: normal;
 }
 
+.big-btn{
+  background-color: #eff8fd;
+  border: 0.1rem solid #0f2152;
+  color: #0f2152;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.8rem;
+  border-radius: 0.5rem;
+  transition: ease-out 0.3s;
+}
+
+.big-btn:hover{
+  background-color: #54c2fd;
+}
+
 
 
