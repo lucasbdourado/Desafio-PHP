@@ -4,8 +4,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 10px;
   text-decoration: none;
+  color: inherit;
+  font-size: 10px;
 }
 
 *:visited{
@@ -18,14 +19,21 @@ body{
 }
 
 table {
-  width: 60vw;
+  min-width: 60vw;
+  max-width: 80vw;
   overflow: auto;
-  
+  border-collapse: collapse;
 }
 
 table, th, td {
   font-size: 1.8rem;
-  border: 1px solid black;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #ddd;
+}
+
+th{
+  background-color: #0f2152;
+  color: white;
 }
 
 .dashboard{
@@ -44,13 +52,114 @@ table, th, td {
 
 .top-content a{
   padding: 0.75rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: #eff8fd;
-  border: 0.2rem solid  #0079c4;
+  border: 0.1rem solid  #0f2152;
   border-radius: 0.5rem;
+  color: #0f2152;
   transition: ease-out 0.3s;
 }
 
 .top-content a:hover{
   background-color: #54c2fd;
 }
+
+tr:nth-child(even){
+  background-color: #eff8fd;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.elmnt{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  background-color: #eff8fd;
+  border: 0.1rem solid #0f2152;
+  color: #0f2152;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  transition: ease-out 0.3s;
+}
+
+.btn:hover{
+  background-color: #54c2fd;
+}
+
+.orange:hover{
+  background-color: #ffa927;
+  border-color: white;
+  color: white;
+}
+
+.red:hover{
+  background-color: #ff3d3d;
+  border-color: white;
+  color: white;
+}
+
+form{
+  display: grid;
+  width: 25vw;
+  line-height: 3.8rem;
+  padding: 1.8rem 2.0rem;
+  border: 0.1rem solid #ddd;
+  background-color: #f5faff;
+  min-width: 400px;
+  text-align: center;
+}
+
+form label, p{
+  font-size: 2.4rem;
+}
+
+form input, select, option{
+  padding: 0.8rem 1.0rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #0f2152;
+}
+
+form input:focus{
+  border: 0.2rem solid #0f2152;
+}
+
+form input[type="submit"],
+form input[type="reset"]{
+  margin-top: 3.8rem;
+  background-color: #eff8fd;
+  cursor: pointer;
+  width: 45%;
+  transition: ease-out 0.3s;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover{
+  background-color: #54c2fd;
+}
+
+.group-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-btn{
+  display: flex;
+  margin-top: 1.8rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.radio-btn label{
+  font-size: 1.6rem;
+}
+
+
+

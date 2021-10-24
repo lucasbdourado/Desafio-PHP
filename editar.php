@@ -8,6 +8,7 @@ include 'connection.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,6 +24,7 @@ include 'connection.php';
         }
     }
     ?>
+    <div class="dashboard">
     <form action="atualizar.php" method="post">
         <input type="hidden" id="oldcod" name="oldcod" value="<?php echo $produto["cod"];?>" required>
         <label for="cod">Código do Produto:</label>
@@ -35,8 +37,12 @@ include 'connection.php';
         <input type="text" id="codpn" name="codpn" value="<?php echo $produto["PN"];?>" required>
         <label for="quantidade">Quantidade em estoque:</label>
         <input type="text" id="quantidade" name="quantidade" value="<?php echo $produto["quantidade"];?>" required>
-
-        <input type="submit" value="Atualizar">
+        
+        <div class="group-btn">
+            <input type="reset" onclick="window.location.href = 'dashboard.php';" value="Voltar">
+            <input type="submit" value="Atualizar">
+        </div>
     </form>
+</div>
 </body>
 </html>

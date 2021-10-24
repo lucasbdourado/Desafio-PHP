@@ -40,7 +40,7 @@
                 <td>R$ <?php echo number_format($display['valor'], 2) ?></td>
                 <td><?php echo $display['PN'] ?></td>
                 <td><?php echo $display['quantidade'] ?></td>
-                <td><a href="editar.php?cod=<?php echo $display['cod']; ?>">Editar</a><button onclick="excluir('<?php echo $display['cod'];?>');">Excluir</button></td>
+                <td class="elmnt"><a class="btn orange" href="editar.php?cod=<?php echo $display['cod']; ?>">Editar</a><a href="#" class="btn red" onclick="excluir('<?php echo $display['cod'];?>');">Excluir</a></td>
             </tr>
             <?php
                 }

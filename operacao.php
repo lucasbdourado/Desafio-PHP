@@ -28,7 +28,7 @@
             
         $oldquant = (int) $produto['quantidade'];
             
-        $resultado = $oldquant - $quant;   
+        $resultado = $oldquant - $quant; 
         
         if(($oldquant - $quant) < 0){
             echo ("<script>window.alert('Não há quantidade suficiente no estoque para esta retirada!'); window.location.href='dashboard.php';</script>");
