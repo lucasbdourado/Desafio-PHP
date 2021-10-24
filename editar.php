@@ -37,6 +37,8 @@ include 'connection.php';
         <input type="text" id="codpn" name="codpn" value="<?php echo $produto["PN"];?>" required>
         <label for="quantidade">Quantidade em estoque:</label>
         <input type="text" id="quantidade" name="quantidade" value="<?php echo $produto["quantidade"];?>" required>
+        <label for="imglink">Quantidade em estoque:</label>
+        <input type="text" id="imglink" name="imglink" value="<?php echo $produto["imglink"];?>" required>
         
         <div class="group-btn">
             <input type="reset" onclick="window.location.href = 'dashboard.php';" value="Voltar">

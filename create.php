@@ -6,8 +6,9 @@
     $valor = addslashes($_POST['valor']);
     $codpn = addslashes($_POST['codpn']);
     $quant = addslashes($_POST['quantidade']);
+    $img = $_POST['imglink'];
 
-    $insert = "INSERT INTO estoque (cod, descricao, valor, PN, quantidade) VALUES ($codigo, '$desc', $valor, '$codpn', $quant);";
+    $insert = "INSERT INTO estoque (cod, descricao, valor, PN, quantidade, imglink) VALUES ($codigo, '$desc', $valor, '$codpn', $quant, '$img');";
 
     if (mysqli_query($newconnect, $insert)) {
 		echo ("<script>window.alert('Produto Cadastrado!'); window.location.href='dashboard.php';</script>");

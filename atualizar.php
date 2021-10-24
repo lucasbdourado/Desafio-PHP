@@ -7,8 +7,9 @@
     $valor = addslashes($_POST['valor']);
     $codpn = addslashes($_POST['codpn']);
     $quant = addslashes($_POST['quantidade']);
+    $imglink = $_POST['imglink'];
 
-    $update = "UPDATE estoque SET cod = $codigo, descricao = '$desc', valor = $valor, PN = '$codpn', quantidade = $quant WHERE cod = '$oldcod'";
+    $update = "UPDATE estoque SET cod = $codigo, descricao = '$desc', valor = $valor, PN = '$codpn', quantidade = $quant, imglink = '$imglink' WHERE cod = '$oldcod'";
 
     if (mysqli_query($newconnect, $update)) {
 		echo ("<script>window.alert('Produto Atualizado!'); window.location.href='dashboard.php';</script>");

@@ -24,6 +24,8 @@ include 'connection.php';
             <input type="text" id="codpn" name="codpn" required>
             <label for="quantidade">Quantidade em estoque:</label>
             <input type="text" id="quantidade" name="quantidade" required>
+            <label for="imglink">Link para imagem do produto:</label>
+            <input type="text" id="imglink" name="imglink" required>
             <div class="group-btn">
                 <input type="reset" onclick="window.location.href = 'dashboard.php';" value="Voltar">
                 <input type="submit" value="Adicionar">
